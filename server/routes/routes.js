@@ -12,7 +12,7 @@ router.get('/issue', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'issueCertificate.html'));
 });
 
-// Route to handle form submissions
+
 router.post('/certificate',async(req, res) => {
     try{
         const data=req.body;
@@ -37,7 +37,7 @@ router.get('/thank-you', (req, res) => {
   
 // });
 
-router.get('/api/certificate/:id', async (req, res) => {
+router.get('/certificate/:id', async (req, res) => {
     const { id } = req.params;
     console.log(`Fetching certificate with ID: ${id}`);
 

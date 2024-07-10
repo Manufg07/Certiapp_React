@@ -120,7 +120,7 @@ const View = () => {
   useEffect(() => {
     const fetchCertificate = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/certificate/${id}`);
+        const res = await fetch(`http://localhost:5000/certificate/${id}`);
         if (!res.ok) {
           throw new Error('Certificate not found');
         }

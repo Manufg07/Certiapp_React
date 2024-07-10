@@ -13,6 +13,7 @@ app.use(
 app.use(express.json());
 
 app.use("/", routes);
+app.use('/api', routes);
 
 const PORT = 5000;
 app.listen(PORT, () => {
